@@ -29,7 +29,8 @@ app.post('/block', async (req, res) => {
         dateOfContract : transaction.dateOfContract,
         vehicletype: transaction.vehicletype,
         contractStartDate : transaction.contractStartDate,
-        contractEndDate : transaction.contractEndDate
+        contractEndDate : transaction.contractEndDate,
+        duration : transaction.duration
       }
       
       let result = await chain.addBlock(new Block(body))

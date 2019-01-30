@@ -25,6 +25,7 @@ http://52.221.70.49:3000/block
 "vehicletype"        ---> Vehicle type for transportation
 "contractStartDate"  ---> Date on which contract is starts
 "contractEndDate"    ---> Date on which contract is ends
+"duration"           ---> Duration of Contract 
 ```
 
 **Example**
@@ -41,7 +42,8 @@ curl -X "POST" "http://52.221.70.49:3000/block" \
     "dateOfContract" : "28-01-2019",
     "vehicletype": "40 feetflat bed",
     "contractStartDate": "28-01-2019",
-    "contractEndDate" : "28-02-2019"
+    "contractEndDate" : "28-02-2019",
+    "duration" : "1"
   }
 }'
 ```
@@ -95,7 +97,8 @@ curl "http://52.221.70.49:3000/getblock/3"
             "dateOfContract": "28-01-2019",
             "vehicletype": "40 feetflat bed",
             "contractStartDate": "28-01-2019",
-            "contractEndDate" : "28-02-2019"
+            "contractEndDate" : "28-02-2019",
+            "duration" : "1"
         }
     },
     "time": "1548677962",
@@ -141,7 +144,8 @@ curl "http://52.221.70.49:3000/gethash/f658a7be274bb8ae3d453eb172292a63c359127a7
             "dateOfContract": "28-01-2019",
             "vehicletype": "40 feetflat bed",
             "contractStartDate": "28-01-2019",
-            "contractEndDate" : "28-02-2019"
+            "contractEndDate" : "28-02-2019",
+            "duration" : "1"
         }
     },
     "time": "1548677962",
